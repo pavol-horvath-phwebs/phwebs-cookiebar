@@ -1,8 +1,8 @@
 {
   "name": "phwebs-cookiebar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Cookie bar as VUE single file component",
-  "main": "PHWebsCookieBar.vue",
+  "main": "PhwebsCookiebar.vue",
   "author": "PH Webs",
   "license": "ISC",
   "dependencies": {

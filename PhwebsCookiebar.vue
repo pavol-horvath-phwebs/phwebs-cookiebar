@@ -1,9 +1,9 @@
 <template>
-    <div v-if="!success" class="phwebs-cookie-bar">
-        <span class="phwebs-cookie-bar-text">
+    <div v-if="!success" class="phwebs-cookiebar">
+        <span class="phwebs-cookiebar-text">
             Tieto stránky používajú cookies. Prehliadaním stránok súhlasíte s ich používaním.
         </span>
-        <span class="phwebs-cookie-bar-succes" v-on:click="clickSucces()">
+        <span class="phwebs-cookiebar-succes" v-on:click="clickSucces()">
             Súhlasím
         </span>
     </div>
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.phwebs-cookie-bar {
+.phwebs-cookiebar {
     position: fixed;
     bottom: 0.5em;
     left: 50%;
@@ -39,10 +39,10 @@ export default {
     padding: 1em;
     border-radius: 0.5em;
     background: fadeout(#7d7d7d, 10%);
-    .phwebs-cookie-bar-text {
+    .phwebs-cookiebar-text {
         color: #eeeeee;
     }
-    .phwebs-cookie-bar-succes {
+    .phwebs-cookiebar-succes {
         padding: 0.5em;
         margin-left: 1em;
         border-radius: 0.5em;
