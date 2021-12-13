@@ -1,6 +1,6 @@
 # phwebs-cookiebar
 
-Vue simple file component for displaying cookie bar with simple success and valid for 1 year.
+Vue simple file component for displaying cookie bar with simple success.
 
 ## Installation
 

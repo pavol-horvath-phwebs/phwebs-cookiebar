@@ -1,11 +1,11 @@
 <template>
     <div v-if="!success" class="phwebs-cookiebar">
-        <span class="phwebs-cookiebar-text">
+        <div class="phwebs-cookiebar-text">
             Tieto stránky používajú cookies. Prehliadaním stránok súhlasíte s ich používaním.
-        </span>
-        <span class="phwebs-cookiebar-succes" v-on:click="clickSucces()">
+        </div>
+        <div class="phwebs-cookiebar-succes" v-on:click="clickSucces()">
             Súhlasím
-        </span>
+        </div>
     </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
     methods: {
         clickSucces() {
             this.success = true
-            this.$cookie.set('phwebs-cookie-success', true, '1y', '/')
+            this.$cookie.set('phwebs-cookie-success', true)
         }
     },
     created() {
@@ -37,6 +37,9 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     padding: 1em;
+    margin: auto;
+    margin-top: 0.5em;
+    width: fit-content;
     border-radius: 0.5em;
     background: fadeout(#7d7d7d, 10%);
     .phwebs-cookiebar-text {
@@ -44,7 +47,6 @@ export default {
     }
     .phwebs-cookiebar-succes {
         padding: 0.5em;
-        margin-left: 1em;
         border-radius: 0.5em;
         background: #fa0098;
         cursor: pointer;
