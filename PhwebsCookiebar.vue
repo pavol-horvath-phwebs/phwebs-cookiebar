@@ -37,15 +37,15 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     padding: 1em;
-    margin: auto;
-    margin-top: 0.5em;
-    width: fit-content;
     border-radius: 0.5em;
     background: fadeout(#7d7d7d, 10%);
     .phwebs-cookiebar-text {
         color: #eeeeee;
     }
     .phwebs-cookiebar-succes {
+        margin: auto;
+        margin-top: 0.5em;
+        width: fit-content;
         padding: 0.5em;
         border-radius: 0.5em;
         background: #fa0098;
