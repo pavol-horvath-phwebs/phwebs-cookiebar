@@ -2,6 +2,8 @@
 
 Vue simple file component for displaying cookie bar with simple success.
 
+Cookie succes expires is one year.
+
 ## Installation
 
 > npm install phwebs-cookiebar --save

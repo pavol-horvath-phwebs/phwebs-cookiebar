@@ -19,7 +19,7 @@ export default {
     methods: {
         clickSucces() {
             this.success = true
-            this.$cookie.set('phwebs-cookie-success', true)
+            this.$cookie.set('phwebs-cookie-success', true, {expires: "1Y"})
         }
     },
     created() {
